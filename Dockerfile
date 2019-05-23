@@ -32,6 +32,7 @@ RUN apt-get update && \
     p7zip-full
 
 RUN apt-get install -y dos2unix lsb-release ragel
+RUN apt-get install -y python3-distutils
 
 COPY . ./ffmpeg-windows-build-helpers
 
