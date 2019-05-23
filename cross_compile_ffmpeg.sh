@@ -1910,7 +1910,7 @@ build_ffmpeg() {
     postpend_configure_opts="--enable-static --disable-shared --prefix=$mingw_w64_x86_64_prefix"
   fi
 
-  do_git_checkout https://github.com/FFmpeg/FFmpeg.git $output_dir $ffmpeg_git_checkout_version
+  do_git_checkout https://github.com/ericdagenais/FFmpeg.git $output_dir $ffmpeg_git_checkout_version features/edagenais/v4.1.3-update
   cd $output_dir
     apply_patch file://$patch_dir/frei0r_load-shared-libraries-dynamically.diff
 
